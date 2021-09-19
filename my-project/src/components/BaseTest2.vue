@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import { myMixin } from "../mixin/myMixin.js";
-import BaseTest from './BaseTest.vue';
+import { myMixin } from '../mixin/myMixin.js'
+import BaseTest from './BaseTest.vue'
 export default {
   name: 'BaseTest2',
-  mixins:[myMixin],
-  components:{
-      BaseTest,
-  },
+  mixins: [myMixin],
+  components: {
+    BaseTest
+  }
 }
 </script>
 
@@ -33,4 +33,4 @@ li {
 a {
   color: #42b983;
 }
-</style>                                                                       
+</style>
