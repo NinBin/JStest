@@ -45,6 +45,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.overlay article {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -200px 0 0 -200px;
+  width: 400px;
+  height: 400px;
+}
 span.off-btn {
   width: 42px;
   height: 22px;
