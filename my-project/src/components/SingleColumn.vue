@@ -24,6 +24,14 @@
       <div class="singleBlock"></div>
       <div class="singleBlock"></div>
     </div>
+    <!-- v-for遍历测试 -->
+    <div class="checkBoxS">
+      <ul v-for="(item, index) in checkBoxList" :key="index">
+        <li><input type="checkbox" />{{ item.status }}</li>
+        <button @click="delSingleBox(index)">删除</button>
+      </ul>
+
+    </div>
   </div>
 </template>
 
@@ -32,12 +40,22 @@ export default {
   name: 'SingleColumn',
   data () {
     return {
-      selected: false
+      selected: false,
+      checkBoxList: [
+        { id: 1, status: 'true1' },
+        { id: 2, status: 'false2' },
+        { id: 3, status: 'true3' },
+        { id: 4, status: 'false4' }
+      ]
     }
   },
   methods: {
     switchStyle () {
       this.selected = ~this.selected
+    },
+    delSingleBox (index) {
+      this.checkBoxList.splice(index, 1)
+      console.log(this.checkBoxList)
     }
   }
 }
