@@ -41,3 +41,4 @@ export default {
       width:200px;
       background: green($color: #000000);
     }
+</style>

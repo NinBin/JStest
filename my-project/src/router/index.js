@@ -6,6 +6,7 @@ import Router from 'vue-router'
 // import FlexBox from '@/components/FlexBox'
 // import SingleColumn from '@/components/SingleColumn'
 import father from '@/pages/father'
+import lodashTest from '@/pages/lodashTest'
 Vue.use(Router)
 
 export default new Router({
@@ -14,6 +15,11 @@ export default new Router({
       path: '/',
       name: 'father',
       component: father
+    },
+    {
+      path: '/lodashTest',
+      name: 'lodashTest',
+      component: lodashTest
     }
   ]
 })
